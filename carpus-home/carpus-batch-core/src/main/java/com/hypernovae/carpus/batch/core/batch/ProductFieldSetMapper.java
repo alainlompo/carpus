@@ -12,7 +12,7 @@ import com.hypernovae.carpus.batch.core.domain.Product;
 
 
 /**
- * @author acogoluegnes
+ * @author LOMPO
  *
  */
 public class ProductFieldSetMapper implements FieldSetMapper<Product> {

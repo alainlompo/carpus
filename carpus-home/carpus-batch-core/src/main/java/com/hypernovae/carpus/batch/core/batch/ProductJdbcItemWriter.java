@@ -13,7 +13,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import com.hypernovae.carpus.batch.core.domain.Product;
 
 /**
- * @author acogoluegnes
+ * @author LOMPO
  *
  */
 public class ProductJdbcItemWriter implements ItemWriter<Product> {

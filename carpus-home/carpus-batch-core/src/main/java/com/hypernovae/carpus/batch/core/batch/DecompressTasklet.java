@@ -18,7 +18,7 @@ import org.springframework.batch.repeat.RepeatStatus;
 import org.springframework.core.io.Resource;
 
 /**
- * @author acogoluegnes
+ * @author LOMPO
  *
  */
 public class DecompressTasklet implements Tasklet {

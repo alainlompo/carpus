@@ -22,7 +22,7 @@ import org.springframework.jdbc.core.simple.SimpleJdbcTemplate;
 /**
  * Generates some execution.
  * WARNING: the job repository is deleted first!
- * @author acogoluegnes
+ * @author LOMPO
  *
  */
 public class GeneratesJobMetaData {

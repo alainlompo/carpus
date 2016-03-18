@@ -12,7 +12,7 @@ import org.springframework.core.io.ClassPathResource;
 
 
 /**
- * @author acogoluegnes
+ * @author LOMPO
  *
  */
 public class DecompressTaskletTest {

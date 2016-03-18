@@ -16,7 +16,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 /**
- * @author acogoluegnes
+ * @author LOMPO
  *
  */
 @RunWith(SpringJUnit4ClassRunner.class)

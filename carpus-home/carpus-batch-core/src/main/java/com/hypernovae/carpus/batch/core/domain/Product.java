@@ -10,7 +10,7 @@ import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 
 /**
- * @author acogoluegnes
+ * @author LOMPO
  *
  */
 public class Product implements Serializable {
