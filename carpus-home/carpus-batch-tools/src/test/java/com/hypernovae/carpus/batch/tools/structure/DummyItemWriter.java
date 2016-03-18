@@ -7,8 +7,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.batch.item.ItemWriter;
+import com.hypernovae.carpus.batch.core.domain.Product;
 
-import com.manning.sbia.ch01.domain.Product;
 
 /**
  * @author acogoluegnes

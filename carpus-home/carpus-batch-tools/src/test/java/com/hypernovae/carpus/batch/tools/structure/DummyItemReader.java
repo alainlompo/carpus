@@ -10,7 +10,9 @@ import org.springframework.batch.item.ItemReader;
 import org.springframework.batch.item.ParseException;
 import org.springframework.batch.item.UnexpectedInputException;
 
-import com.manning.sbia.ch01.domain.Product;
+import com.hypernovae.carpus.batch.core.domain.Product;
+
+
 
 /**
  * @author acogoluegnes
