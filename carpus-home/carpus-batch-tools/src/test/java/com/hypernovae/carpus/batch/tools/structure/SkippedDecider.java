@@ -9,7 +9,7 @@ import org.springframework.batch.core.job.flow.FlowExecutionStatus;
 import org.springframework.batch.core.job.flow.JobExecutionDecider;
 
 /**
- * @author acogoluegnes
+ * @author LOMPO
  *
  */
 public class SkippedDecider implements JobExecutionDecider {

@@ -9,7 +9,7 @@ import org.mortbay.jetty.nio.SelectChannelConnector;
 import org.mortbay.jetty.webapp.WebAppContext;
 
 /**
- * @author acogoluegnes
+ * @author LOMPO
  *
  */
 public class LaunchSpringBatchAdmin {

@@ -11,7 +11,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
  * Launches the import invoices job.
- * @author acogoluegnes
+ * @author LOMPO
  *
  */
 public class LaunchImportProductsJob {

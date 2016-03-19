@@ -7,7 +7,7 @@ import org.h2.tools.Console;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
- * @author acogoluegnes
+ * @author LOMPO
  *
  */
 public class LaunchDatabaseAndConsole {

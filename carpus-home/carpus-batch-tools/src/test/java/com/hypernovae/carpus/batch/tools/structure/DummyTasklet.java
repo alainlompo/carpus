@@ -9,7 +9,7 @@ import org.springframework.batch.core.step.tasklet.Tasklet;
 import org.springframework.batch.repeat.RepeatStatus;
 
 /**
- * @author acogoluegnes
+ * @author LOMPO
  *
  */
 public class DummyTasklet implements Tasklet {

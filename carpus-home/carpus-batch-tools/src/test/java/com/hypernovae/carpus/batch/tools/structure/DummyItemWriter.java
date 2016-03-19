@@ -11,7 +11,7 @@ import com.hypernovae.carpus.batch.core.domain.Product;
 
 
 /**
- * @author acogoluegnes
+ * @author LOMPO
  *
  */
 public class DummyItemWriter implements ItemWriter<Product> {
