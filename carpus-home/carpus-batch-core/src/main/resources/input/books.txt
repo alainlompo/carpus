@@ -1,0 +1,8 @@
+ISBN,NAME,DESCRIPTION,PRICE
+ABS985-8354S,4 principes fondamentaux, supernatural healing,1.60
+ACR185-8254S,allons et guérissons les malades, supernatural healing,1.60
+ADQ285-8154S,back to reality, supernatural living,1.60
+AEP385-8254S,cleansing the conscience, supernatural righteousness,1.60
+AFO485-8354S,faith builders, supernatural faith,1.60
+AGN585-8454S,new creation, supernatural living,1.60
+AHM685-8554S,The new self, supernatural living,1.60
