@@ -20,7 +20,7 @@ public class DecompressTaskletTest {
 	private static final String[] EXPECTED_CONTENT = new String[] {
 		"ISBN,NAME,DESCRIPTION,PRICE",
 		"ABS985-8354S,4 principes fondamentaux, supernatural healing,1.60",
-		"ACR185-8254S,allons et guérissons les malades, supernatural healing,1.60",
+		"ACR185-8254S,allons et guerissons les malades, supernatural healing,1.60",
 		"ADQ285-8154S,back to reality, supernatural living,1.60",
 		"AEP385-8254S,cleansing the conscience, supernatural righteousness,1.60",
 		"AFO485-8354S,faith builders, supernatural faith,1.60",
