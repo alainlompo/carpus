@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.hypernovae</groupId>
@@ -213,9 +214,9 @@
 	   <!-- <module>carpus</module>-->
 		<module>carpus-batch-core</module>
 		<module>carpus-batch-tools</module>	
-<!--		<module>carpus-batch-product-poc</module>
+		<module>carpus-batch-product-poc</module>
  		<module>carpus-batch-scheduler</module> 
-		<module>carpus-batch-io-structure</module>
+<!--		<module>carpus-batch-io-structure</module>
 		<module>carpus-batch-enhancers</module>
 		<module>carpus-batch-processors</module>
 
@@ -224,7 +225,8 @@
 		<module>carpus-batch-flow-context</module>
 		<module>carpus-core-datas</module>
 		<module>carpus-hello-world</module>-->
-	</modules>
+    <module>fitness-for-carpus</module>
+  </modules>
 	
   
   
