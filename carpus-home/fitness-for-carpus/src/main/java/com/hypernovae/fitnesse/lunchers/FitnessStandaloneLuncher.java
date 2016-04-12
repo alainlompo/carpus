@@ -12,8 +12,6 @@ public class FitnessStandaloneLuncher {
 	private static final String WHITE_SPACE = " ";
 	private static final String PORT_SWITCH = "-p";
 	
-	
-	
 	public static void main(String[] args) throws IOException {
 		String path = null;
 		String port = null;
@@ -30,8 +28,7 @@ public class FitnessStandaloneLuncher {
 		.append(PORT_SWITCH)
 		.append(WHITE_SPACE)
 		.append(port);
-		
-		
+			
 		// TODO: complete the request and 
 		// TODO: look here: http://stackoverflow.com/questions/1320476/execute-another-jar-in-a-java-program
 		
