@@ -42,3 +42,6 @@ Story N2: Performing modulo operations
 |19         |8      |3      |
 |29         |6      |5      |
 </pre>
+
+<h4>Cumbersome class path referencing</h4>
+Since we are using the standalone version we need to manually tell it where to find the classes it needs (including the fitnesse jar at runtime and the fixtures dependencies). We do it using the <b>!path</b> instruction, and as you noticed, it can become very cumbersome. Fortunately there is a better way to do this using the fitnesse maven dependencies. Similar approaches exists also for other build and dependencies management tools such as Gradle or Ivy. We will only illustrate the use of maven for now, other illustrations will follow later.<br/>
