@@ -216,8 +216,8 @@
 		<module>carpus-batch-tools</module>	
 		<module>carpus-batch-product-poc</module>
  		<module>carpus-batch-scheduler</module> 
-<!--		<module>carpus-batch-io-structure</module>
-		<module>carpus-batch-enhancers</module>
+		<module>carpus-batch-io-structure</module>
+<!--		<module>carpus-batch-enhancers</module>
 		<module>carpus-batch-processors</module>
 
 		<module>carpus-batch-monitoring</module>
@@ -225,8 +225,8 @@
 		<module>carpus-batch-flow-context</module>
 		<module>carpus-core-datas</module>
 		<module>carpus-hello-world</module>-->
-    <module>fitness-for-carpus</module>
-    <module>code-provider-for-fitness</module>
+    	<module>fitness-for-carpus</module>
+    	<module>code-provider-for-fitness</module>
   </modules>
 	
   
