@@ -1,0 +1,84 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.techno.pocs.demos</groupId>
+  <artifactId>spring-batch-csv</artifactId>
+  <packaging>jar</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <name>spring-batch-csv</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+        <jdk>1.8</jdk>
+        <springbatch-version>2.2.1.RELEASE</springbatch-version>
+        <spring-version>3.2.2.RELEASE</spring-version>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- javax persistence
+        We use the provided scope so that the dependency is not embedded
+        when we deploy as the app servers often bring their own
+   -->
+   <dependency>
+       <groupId>javax.persistence</groupId>
+       <artifactId>persistence-api</artifactId>
+       <version>1.0.2</version>
+       <scope>provided</scope>
+    </dependency>
+
+    <!-- spring Core -->
+    <dependency>
+          <groupId>org.springframework</groupId>
+          <artifactId>spring-core</artifactId>
+          <version>${spring-version}</version>
+    </dependency>
+
+    <!-- spring-batch dependencies -->
+    <dependency>
+          <groupId>org.springframework.batch</groupId>
+          <artifactId>spring-batch-infrastructure</artifactId>
+          <version>${springbatch-version}</version>
+    </dependency>
+    <dependency>
+          <groupId>org.springframework.batch</groupId>
+          <artifactId>spring-batch-core</artifactId>
+          <version>${springbatch-version}</version>
+    </dependency>
+
+    <!-- spring database dependencies -->
+      <dependency>
+          <groupId>org.springframework</groupId>
+          <artifactId>spring-jdbc</artifactId>
+          <version>${spring-version}</version>
+      </dependency>
+
+      <!-- h2 -->
+      <dependency>
+        <groupId>com.h2database</groupId>
+        <artifactId>h2</artifactId>
+        <version>1.4.187</version>
+      </dependency>
+
+      <!-- Spring batch for tests -->
+      <dependency>
+          <groupId>org.springframework.batch</groupId>
+          <artifactId>spring-batch-test</artifactId>
+          <version>2.2.1.RELEASE</version>
+      </dependency>
+  </dependencies>
+
+  <build>
+    <testResources>
+       <testResource>
+        <directory>resources</directory>
+       </testResource>
+    </testResources>
+  </build>
+</project>
