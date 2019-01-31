@@ -11,7 +11,7 @@
   <properties>
         <jdk>1.8</jdk>
         <springbatch-version>2.2.1.RELEASE</springbatch-version>
-        <spring-version>3.2.18.RELEASE</spring-version>
+        <spring-version>5.1.4.RELEASE</spring-version>
   </properties>
 
   <dependencies>

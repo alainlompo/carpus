@@ -12,8 +12,12 @@ import org.springframework.batch.core.JobParametersBuilder;
 import org.springframework.batch.core.launch.JobLauncher;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.support.rowset.SqlRowSet;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+
+
+
 
 /**
  * @author LOMPO
@@ -41,9 +45,15 @@ public class ImportProductsIntegrationTest {
 		);
 	}
 
+	private int queryForInt(String sql) {
+		SqlRowSet rowSet = jdbcTemplate.queryForRowSet("select count(1) from product");
+		return rowSet.getInt(0);
+	}
+
 	@Test public void importProducts() throws Exception {
-		int initial = jdbcTemplate.queryForInt("select count(1) from product");
-		
+
+		int initial = queryForInt("select count(1) from product");
+
 		jobLauncher.run(job, new JobParametersBuilder()
 			.addString("inputResource", "classpath:/input/products.zip")
 			.addString("targetDirectory", "./target/importproductsbatch/")
@@ -52,11 +62,11 @@ public class ImportProductsIntegrationTest {
 			.toJobParameters()
 		);
 		int nbOfNewProducts = 7;
-		Assert.assertEquals(initial+nbOfNewProducts,jdbcTemplate.queryForInt("select count(1) from product"));
+		Assert.assertEquals(initial+nbOfNewProducts,queryForInt("select count(1) from product"));
 	}
 	
 	@Test public void importProductsWithErrors() throws Exception {
-		int initial = jdbcTemplate.queryForInt("select count(1) from product");
+		int initial = queryForInt("select count(1) from product");
 		
 		jobLauncher.run(job, new JobParametersBuilder()
 			.addString("inputResource", "classpath:/input/products_with_errors.zip")
@@ -66,7 +76,7 @@ public class ImportProductsIntegrationTest {
 			.toJobParameters()
 		);
 		int nbOfNewProducts = 6;
-		Assert.assertEquals(initial+nbOfNewProducts,jdbcTemplate.queryForInt("select count(1) from product"));
+		Assert.assertEquals(initial+nbOfNewProducts,queryForInt("select count(1) from product"));
 	}
 	
 }
